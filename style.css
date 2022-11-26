@@ -1,0 +1,436 @@
+*
+{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+}
+header
+
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/indiagat1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+nav{
+    background: black;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    text-transform:uppercase;
+    color: white;
+    padding-left: 50px;
+   
+    
+    
+}
+.ind
+{
+    width: 40%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav .a{
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+}
+nav .a a{
+    text-decoration: none;
+    color: white;
+}
+nav .a a:hover{
+    color: rgb(128, 154, 154);
+    font-size: 18px;
+    
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    
+    color: white;
+}
+section h3{
+
+    font-size:35px;
+    font-weight:200;
+    padding-bottom:20px;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+
+}
+section h1{
+    letter-spacing: 3px;
+    font-size: 60px;
+    font-weight: 500;
+     
+  
+    text-transform: uppercase;
+    text-shadow: black;
+    
+}
+section a{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: black;
+    cursor: pointer;
+    margin-left:  20px ;
+
+    font-style: bold;
+
+}
+section h2{
+    
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+    font-style: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'
+
+}
+section .btn1{
+    background-color: white;
+    transition: .10s;
+ 
+}
+section .btn1:hover{
+    background-color: #00b894;
+    
+}
+section .btn2{
+    background-color: aliceblue;
+    transition: .10s;
+}
+section .btn2:hover{
+    background: #00b894;
+}
+.change::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{
+        content: "DELHI";
+        color: aqua;
+    }
+    35%{
+        content: "BIHAR";
+        color: #00b894;
+    }
+    55%{
+        content: "JAIPUR";
+        color: orangered;
+    }
+    65%{
+        content: "KERALA";
+        color: greenyellow;
+    }
+    85%{
+        content: "UTTARAKHAND";
+        color: #00b894;
+    }
+    100%{
+       
+        content: "AGRA";
+        color: beige;
+    }
+
+
+}
+
+/*services*/
+
+#services
+{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+  
+    background: #908888;
+   
+}
+hr{
+    width: 60%;
+    
+    margin: 15px auto;
+    background: #fff;
+}
+section p{
+    font-size: 20px;
+    color: #fff;
+
+}
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+}
+.boxf{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #908888;
+    justify-content: space-around;
+    
+}
+.single-services{
+    color: #fff;
+    position: relative;
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10%;
+    margin: 10px;
+
+}
+.single-services img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3) #009688);
+    transition: 0-5s;
+
+}
+.decs
+{
+    width: 80%;
+    position: absolute;
+    left: 9%;
+    bottom: 0%;
+    opacity: 0;
+    transition: 1s;
+}
+desc p{
+    font-size: 14px;
+
+}
+.single-services:hover .decs
+{
+    opacity: 1;
+    bottom: 40%;
+    transition-delay: .4s;
+}
+
+
+
+/*FOOTER*/
+footer{
+    
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: black;
+    color: white;
+}
+footer::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    top: 100px;
+    height: 1px;
+
+}
+footer .content
+{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+footer .content .top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .content .top .logo
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}
+footer .content .top .media-icon
+{
+    display: flex;
+
+}
+.content .top .media-icon a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    
+    border-radius: 50%;
+}
+
+.top .media-icon a:nth-child(1)
+{
+    color:#4267B2;
+    
+}
+
+
+.top .media-icon a:nth-child(1):hover
+{
+    color:#4267B2;
+    background: #fff;
+}
+.top .media-icon a:nth-child(2)
+{
+    color: #E1306c;
+}
+.top .media-icon a:nth-child(3)
+{
+    color:#1DA1F2;
+}.top .media-icon a:nth-child(4)
+{
+    color:#0077B8 ;
+}
+.top .media-icon a:nth-child(5)
+{
+    color: #FF0000;
+}
+.top .media-icon a:nth-child(2):hover
+{
+    color:#E1306c;
+    background: #fff;
+}
+.top .media-icon a:nth-child(3):hover
+{
+    color:#1DA1F2;
+    background: #fff;
+}
+
+.top .media-icon a:nth-child(4):hover
+{
+    color:#0077B8;
+    background: #fff;
+}
+
+.top .media-icon a:nth-child(5):hover
+{
+    color:#FF0000;
+    background: #fff;
+}
+
+.link
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.link_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.link_name ::before
+{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    left: 0;
+    bottom: -2px;
+}
+.box{
+    width: calc(100% / 5 -10px);
+    
+    
+}
+.box-1{
+    margin-top: 15px;
+
+}
+.box li{
+    list-style: none;
+    margin: 6px 0;
+}
+.box li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.6;
+    transition: all .4s ease;
+}
+.box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+#input
+{
+    margin-right: 50px;
+    margin-top: -40px;
+
+}
+#inputf input{
+    height: 40px;
+    width: calc(100% + 55px);
+}
+.bottom_text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 35%;
+
+}
+.bt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
